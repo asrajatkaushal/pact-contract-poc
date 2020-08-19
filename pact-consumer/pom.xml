@@ -97,6 +97,16 @@
 					</dependency>
 				</dependencies>
 			</plugin>
+
+			<plugin>
+				<groupId>au.com.dius</groupId>
+				<artifactId>pact-jvm-provider-maven</artifactId>
+				<version>${pact.version}</version>
+				<configuration>
+					<pactBrokerUrl>http://localhost:9090</pactBrokerUrl>
+					<pactDirectory>target/pacts</pactDirectory>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
