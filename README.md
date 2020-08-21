@@ -7,9 +7,9 @@ Setup
 #### Steps
 * Run `docker-compose up` from within pact-broker
 * Run `mvn clean install` in both pact-consumer & pact-producer.
-* Run pact-consumer tests (`mvn clean test`)
+* Run tests specified in `GetTransactionsTest` in pact-consumer.
 * Run `mvn pact:publish` in pact-consumer
 * Run pact-producer application
-* Run pact-producer tests (`mvn clean test`)
+* Run tests specified in `GetTransactionsContractVerificationTest` in pact-producer.
 
 > **Note:** Please create directories data\pgdata inside pact-broker\db
